@@ -1,9 +1,6 @@
 domain: coxedge.io
 layout:
 - go.kubebuilder.io/v3
-plugins:
-  manifests.sdk.operatorframework.io/v2: {}
-  scorecard.sdk.operatorframework.io/v2: {}
 projectName: cloud-controller-manager
 repo: github.com/coxedge/Cloud-Controller-Manager
 resources:
@@ -12,8 +9,8 @@ resources:
     namespaced: true
   controller: true
   domain: coxedge.io
-  group: core
-  kind: Node
+  group: managemenet
+  kind: EdgeNode
   path: github.com/coxedge/Cloud-Controller-Manager/api/v1
   version: v1
 version: "3"
